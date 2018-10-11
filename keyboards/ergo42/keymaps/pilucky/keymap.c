@@ -25,10 +25,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * `------------------------------------------------'   `------------------------------------------------'
    */
   [BASE] = LAYOUT( \
-    KC_TAB,          KC_Q,    KC_W,    KC_E,    KC_R,            KC_T,            KC_GRV,             KC_LBRC,          KC_Y,            KC_U,            KC_I,    KC_O,    KC_P,     KC_BSPC, \
-    KC_LCTL,         KC_A,    KC_S,    KC_D,    KC_F,            KC_G,            KC_MINS,            KC_RBRC,          KC_H,            KC_J,            KC_K,    KC_L,    KC_SCLN,  KC_ENT, \
-    KC_LSFT,         KC_Z,    KC_X,    KC_C,    KC_V,            KC_B,            KC_EQL,             KC_BSLS,          KC_N,            KC_M,            KC_COMM, KC_DOT,  KC_UP,    KC_SLSH, \
-    LT(SYMB, KC_0),  KC_LALT, S(KC_2), S(KC_1), KC_LGUI,         LT(META,KC_SPC), LT(META,KC_ESC),    LT(SYMB,KC_SPC),  LT(META,KC_SPC), KC_RGUI,         KC_QUOT, KC_LEFT, KC_DOWN,  KC_RGHT \
+    KC_TAB,          KC_Q,    KC_W,    KC_E,    KC_R,            KC_T,            KC_GRV,             KC_RBRC,          KC_Y,            KC_U,            KC_I,    KC_O,    KC_P,     KC_BSPC, \
+    KC_LCTL,         KC_A,    KC_S,    KC_D,    KC_F,            KC_G,            KC_MINS,            KC_LBRC,          KC_H,            KC_J,            KC_K,    KC_L,    KC_SCLN,  KC_ENT, \
+    KC_LSFT,         KC_Z,    KC_X,    KC_C,    KC_V,            KC_B,            KC_EQL,             KC_BSLS,          KC_N,            KC_M,            KC_COMM, KC_DOT,  KC_SLSH,  KC_QUOT, \
+    LT(SYMB, KC_0),  KC_LALT, S(KC_2), S(KC_1), KC_LGUI,         LT(META,KC_SPC), LT(META,KC_ESC),    LT(SYMB,KC_SPC),  LT(META,KC_SPC), KC_RGUI,         KC_LEFT, KC_DOWN, KC_UP,    KC_RGHT \
   ),
 
   /* META
@@ -61,8 +61,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * `------------------------------------------------'   `------------------------------------------------'
    */
   [SYMB] = LAYOUT( \
-    _______,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5, _______,    _______,      KC_F6,   KC_F7,   KC_F8,   KC_F9,  KC_F10, _______, \
-    _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______,    _______,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______, \
+    _______,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5, _______,    _______,      KC_F6,   KC_F7,   KC_UP,   KC_F9,  KC_F10, _______, \
+    _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______,    _______,    XXXXXXX, KC_LEFT, KC_DOWN, KC_RGHT, XXXXXXX, _______, \
     _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______,    _______,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______, _______, \
     _______, _______, _______, _______, _______, _______, _______,    _______,    _______, _______, _______, _______, _______, _______ \
   )
